@@ -1,0 +1,112 @@
+.app-container {
+  background-color: rgb(44, 43, 43);
+  min-height: 100vh;
+  padding: 2em;
+
+  h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+  }
+}
+
+.app-sbicon {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #a80f29;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  div {
+    background-color: aqua;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.app-main {
+  background-color: aqua;
+  background-image: url("../assets/randombackground/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1em;
+  padding: 2em;
+  position: relative;
+
+  width: 100%;
+  //max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+
+  section {
+    width: 100%;
+  }
+
+  input {
+    width: 90%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.menu-button {
+  margin-right: 2em;
+}
+
+.task-container {
+  margin-bottom: 1em;
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    background: none;
+
+    & > * {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.action-button {
+  height: 50px;
+  padding: 0 1em;
+  border: none;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 0.5em;
+  letter-spacing: 0.1em;
+}
+
+.error-text {
+  color: white;
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
